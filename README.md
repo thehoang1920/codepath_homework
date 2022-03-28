@@ -26,15 +26,17 @@ Time spent: **5** hours spent in total
     -  Navigate to the main page of WP
     -  Enter **http://thehoang.tech/<svg onload=alert('Youhavebeentricked')>** into the search box
   - [ ] Affected source code: Yes
-### 3. (Required) Vulnerability Name or ID
+### 3. (Required) User Enumeration
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+    - Vulnerability types: User Enumeration
+    - Tested in version: 4.2
+    - Fixed in version: None
+  - [ ] GIF Walkthrough: <img src="userenumeration.gif" alt="userenumeration">
   - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - Navigate to the login page
+    - When you input unvalid user name, the error message will show the username is invalid
+    - When you input the valud username, the error message will show "the password for username .. is not correct"
+  - [ ] Affected source code: None
 ### 4. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
