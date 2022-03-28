@@ -25,7 +25,7 @@ Time spent: **5** hours spent in total
   - [ ] Steps to recreate: 
     -  Navigate to the main page of WP
     -  Enter **http://thehoang.tech/<svg onload=alert('Youhavebeentricked')>** into the search box
-  - [ ] Affected source code: None
+  - [ ] Affected source code: Yes
 ### 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
