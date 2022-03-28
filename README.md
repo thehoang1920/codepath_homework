@@ -16,15 +16,16 @@ Time spent: **5** hours spent in total
    -  Navigate to the main page of WP
    -  Enter **or"1"="1** into the search box
   - [ ] Affected source code: **None**
-### 2. (Required) Vulnerability Name or ID
+### 2. (Required) CVE-2016-1564: Authenticated Cross-Site Scripting (XSS)
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+    - Vulnerability types: Authenticated Cross-Site Scripting (XSS)
+    - Tested in version:4.2
+    - Fixed in version: 4.4.1
+  - [ ] GIF Walkthrough: <img src="CVE-2016-1564.gif" alt="CVE-2016-1564">
   - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    -  Navigate to the main page of WP
+    -  Enter **http://thehoang.tech/<svg onload=alert('Youhavebeentricked')>** into the search box
+  - [ ] Affected source code: None
 ### 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
