@@ -35,30 +35,35 @@ On the salesperson page, when you look through all the employee's page in the UR
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Cross-Site Scripting
 
 Description:
+The green site's contact form (found at /green/public/contact.php) allows arbitrary JavaScript to be submitted and later executed by authenticated users in the administration interface (found at /green/public/staff/feedback/index.php).
+
+For example, submitting the following JavaScript in the "Feedback" field of the contact form will lead to a JavaScript alert appearing when feedback is viewed by an authenticated user.
 
 <img src="green-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: User Enumeration
 
 Description:
+We know that jmonroe99 and pperson are valid usernames and if you incorrectly type the password you receive an error message "Log in was unsuccessful" is bolded. However, when you try to submit in a username that is not valid like uname the error message is not bolded.
 
 <img src="green-vuln2.gif">
 
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: Cross-Site Request Forgery (CSRF)
 
 Description:
-
+We can trick the admin into opening a blank page in the feedback that contains a hidden malicious link.
 <img src="red-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Insecure Direct Object Reference (IDOR)
 
 Description:
+The red site is vulnerable to an IDOR attack, as inactive salespeople's detail pages are accessible by altering the value of the id GET parameter in the URL /red/public/salesperson.php?id=. Other versions of the site redirect requests for non-public salesperson profiles back to the general public listing of salespeople.
 
 <img src="red-vuln2.gif">
 
