@@ -21,6 +21,7 @@ Dionaea is a low-interaction honeypot that captures attack payloads and malware.
 ### Database Backup (Required) 
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
+MHN-Admin uses the MongoDB RDBMS. This is made evident when using the given command to export the sessions.json file. The JSON file records the protocl attacked, the source and destination IP and port, and the time and date of the attack, among other things.
 
 *Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
 
