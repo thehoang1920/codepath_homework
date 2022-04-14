@@ -9,7 +9,7 @@
 **Summary:** How did you deploy it? Did you use GCP, AWS, Azure, Vagrant, VirtualBox, etc.?
 I deploy it using GCP on Window 11
 
-<img src="mhn-admin.gif">
+<img src="mhn-admin.gif.gif">
 
 ### Dionaea Honeypot Deployment (Required)
 
